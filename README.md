@@ -1,4 +1,4 @@
-# Análisis Exploratorio de Datos para la Predicción de la Calidad del Aire Urbano (Proyecto Educativo)
+# 🌱 Análisis Exploratorio de Datos para la Predicción de la Calidad del Aire Urbano (Proyecto Educativo)
 
 ## Introducción
 
@@ -32,7 +32,9 @@ El análisis EDA reveló información importante sobre el dataset:
 
 Este análisis exploratorio proporciona una comprensión fundamental de la estructura y las dinámicas presentes en el dataset de calidad del aire. Los hallazgos sientan las bases para futuras investigaciones, incluyendo un preprocesamiento más exhaustivo, la selección de características relevantes y el desarrollo de modelos predictivos más robustos para anticipar la calidad del aire en la ciudad estudiada. Este proyecto subraya el valor del análisis de datos en la comprensión de fenómenos ambientales complejos con fines educativos y de potencial aplicación práctica.
 
+---
 
+"Este proyecto fue desarrollado con un fin estrictamente educativo, buscando aprender y aplicar técnicas de análisis de datos a información climática real. Se utilizaron datos de concentraciones de metano y dióxido de carbono, así como registros de temperatura global, para explorar las relaciones entre estos factores y el fenómeno del calentamiento global. Dado el carácter educativo del proyecto, se reconoce que los análisis y conclusiones presentados podrían contener errores o interpretaciones limitadas. El objetivo principal fue practicar y mejorar mis habilidades en el manejo y análisis de datos, utilizando un tema de relevancia científica y social."
 
 
 ![image](https://github.com/user-attachments/assets/b4f27044-69ae-485d-8ff4-fdadba88a986)
