@@ -8,6 +8,12 @@ Este informe presenta un Análisis Exploratorio de Datos (EDA) realizado sobre u
 
 Los datos provienen del [UCI Machine Learning Repository - Air Quality Data Set](https://archive.ics.uci.edu/dataset/360/air+quality) y se encuentran en el archivo `AirQualityUCI.csv`. El dataset contiene aproximadamente 9,000 registros horarios e incluye concentraciones de diversos gases contaminantes (Monóxido de Carbono (CO), Óxidos de Nitrógeno (NOx), Dióxido de Nitrógeno (NO2), Benceno (C6H6), Hidrocarburos No Metánicos (NMHC)) y variables meteorológicas (Temperatura (T), Humedad Relativa (RH), Humedad Absoluta (AH)).
 
+## ¿Por qué el CO se usa como un ejemplo clave?
+El Monóxido de Carbono es un gas tóxico conocido por sus efectos perjudiciales para la salud humana. Por lo tanto, predecir sus niveles es un objetivo relevante desde una perspectiva de salud pública y gestión ambiental.
+Queremos predecir esta variable utilizando las otras variables como características predictoras en un modelo de regresión ya que se espera que su valor  esté correlacionado o influenciado por ellas. El modelo de regresión aprenderá estas relaciones a partir de los datos históricos para poder predecir la concentración de CO en nuevas situaciones.
+
+
+
 ## Metodología (Análisis Exploratorio)
 
 El análisis EDA realizado incluyó las siguientes etapas:
