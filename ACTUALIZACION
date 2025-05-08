@@ -1,0 +1,28 @@
+
+Luego del anàlisis surguio el problema con tu train_test_split() actual:
+
+X_train, X_test, y_train, y_test = train_test_split(X, Y, test_size=0.3, random_state=42)
+Este tipo de división baraja los datos al azar, lo cual rompe la secuencia temporal. Eso puede provocar data leakage porque el modelo podría aprender del futuro (test) para predecir el pasado (train).
+
+Se debe modificar a:
+
+Conservar todo tu análisis EDA como está (con correlaciones, scatter plots, etc.), porque eso sí se hace con todos los datos.
+Pero en la parte de modelado, hare una división temporal secuencial, algo así:
+# Ordena por índice temporal 
+datos = datos.sort_index()
+
+# Crear X e y como antes
+Y = datos['CO(GT)']
+X = datos[[
+    'C6H6(GT)',
+    'PT08.S2(NMHC)',
+    'PT08.S1(CO)',
+    'PT08.S5(O3)',
+    'NOx(GT)',
+    'PT08.S3(NOx)'
+]]
+
+# División temporal manual (por ejemplo, 70% entrenamiento, 30% prueba)
+n = int(len(datos) * 0.7)
+X_train, X_test = X[:n], X[n:]
+y_train, y_test = Y[:n], Y[n:]
